@@ -5,7 +5,7 @@ data = json.loads(open("dataset.txt", "r").read())
 
 most_frequent = lambda data: max(set(data), key=data.count)
 
-while data.__len__() != 1:
+while data[:-1]:
     options = [s for value in data.values() for s in value.keys()]
     possible_options = [data[key][most_frequent(options)] for key in data.keys() if data[key][most_frequent(options)]]
 
