@@ -5,7 +5,7 @@ data = json.loads(open("dataset.txt", "r").read()) # Open and load dataset as a 
 
 most_frequent = lambda data: max(set(data), key=data.count) # Define a function to get the most common value out of a list
 
-while data[:-1]: # Loop (equivallent to while data.__len__() != 1)
+while data.__len__() != 1:  # External Loop (equivalent to [:-1]?)
     options = [s for value in data.values() for s in value.keys()] # Get all characteristics
     possible_options = [data[key][most_frequent(options)] for key in data.keys() if data[key][most_frequent(options)]] # Get all different values for the characteristic with most instances in "options"
 
