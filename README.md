@@ -26,9 +26,13 @@ print(guess.guessed)
 
 #### Functions:
 `lib.BasicallyAkinator().is_done()`: returns a boolean if it has guessed the item.
+
 `lib.BasicallyAkinator().next(input_function=input, print_options=True)`: goes to the next question and does all the processing for that one.
+
 - input_function: Function that will be executed to fetch the input, has to have 1 needed argument and has to return data inputed as a string.
+
 - - ```python input_func = lambda text: return "hi" ```
+
 - print_options: Boolean argument, print the answer options you have or not
 
 `lib.BasicallyAkinator().guessed`: the item It has guessed, if it hasn't been guessed it's equal to None
