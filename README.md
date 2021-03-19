@@ -1,5 +1,5 @@
 # BasicallyAkinator
- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15` Basically Akinator, written in Python.
+![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) Basically Akinator, written in Python.
 
 This is a program based on [Akinator](https://en.akinator.com/), which basically guesses who/what you are thinking about based on some key characteristics.
 
