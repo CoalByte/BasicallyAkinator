@@ -9,6 +9,7 @@ class BasicallyAkinator:
     def __init__(self, dataset_path="dataset.json", on_guessed=None):
         self.data = json.loads(open(dataset_path, "r").read())
         self.guessed = None
+        
         self._event = on_guessed
 
     def next(self, input_function=input, print_options=True):
@@ -33,5 +34,6 @@ class BasicallyAkinator:
             if str(type(self._event)).find("function") != -1:
                 self._event(self.guessed)
 
+    @property
     def is_done(self):
         return True if self.data.__len__() == 1 else False
