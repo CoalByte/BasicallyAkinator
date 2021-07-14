@@ -18,7 +18,7 @@ import lib
 
 guess = lib.BasicallyAkinator()
 
-while guess.is_done() is False: 
+while guess.is_done is False: 
   guess.next()
 
 print(guess.guessed)
